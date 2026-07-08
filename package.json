@@ -11,22 +11,26 @@
 		"lint:check": "ultracite check",
 		"lint": "ultracite fix",
 		"typecheck": "tsc --noEmit",
+		"deps:check": "taze",
+		"deps:update": "taze --write --install",
+		"deps:update:minor": "taze minor --write --install",
+		"deps:update:major": "taze major --write --install",
 		"commit": "cz",
 		"commitlint": "commitlint --edit",
 		"prepare": "lefthook install"
 	},
 	"dependencies": {
 		"next": "16.2.10",
-		"react": "19.2.4",
-		"react-dom": "19.2.4"
+		"react": "19.2.7",
+		"react-dom": "19.2.7"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^21.2.0",
 		"@commitlint/config-conventional": "^21.2.0",
-		"@tailwindcss/postcss": "^4",
-		"@types/node": "^20",
-		"@types/react": "^19",
-		"@types/react-dom": "^19",
+		"@tailwindcss/postcss": "^4.3.2",
+		"@types/node": "^26.1.0",
+		"@types/react": "^19.2.17",
+		"@types/react-dom": "^19.2.3",
 		"babel-plugin-react-compiler": "1.0.0",
 		"commitizen": "^4.3.2",
 		"cz-conventional-changelog": "^3.3.0",
@@ -37,8 +41,9 @@
 		"oxlint": "^1.73.0",
 		"oxlint-plugin-react-doctor": "^0.7.1",
 		"portless": "^0.15.1",
-		"tailwindcss": "^4",
-		"typescript": "^5",
+		"tailwindcss": "^4.3.2",
+		"taze": "^19.14.1",
+		"typescript": "^6.0.3",
 		"ultracite": "^7.9.2"
 	},
 	"config": {
