@@ -4,7 +4,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "next dev",
+		"dev": "PORTLESS_TLD=app portless",
+		"dev:app": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint:check": "ultracite check",
@@ -35,6 +36,7 @@
 		"oxfmt": "^0.58.0",
 		"oxlint": "^1.73.0",
 		"oxlint-plugin-react-doctor": "^0.7.1",
+		"portless": "^0.15.1",
 		"tailwindcss": "^4",
 		"typescript": "^5",
 		"ultracite": "^7.9.2"
@@ -43,5 +45,9 @@
 		"commitizen": {
 			"path": "cz-conventional-changelog"
 		}
+	},
+	"portless": {
+		"name": "new.cargill",
+		"script": "dev:app"
 	}
 }
