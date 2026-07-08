@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
+import { ThemeProvider } from 'next-themes'
 import { Geist, Geist_Mono } from 'next/font/google'
 
-import './globals.css'
+import '~/styles/globals.css'
 
 const geistSans = Geist({
 	subsets: ['latin'],
@@ -26,9 +27,30 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+			suppressHydrationWarning
+			className={`${geistSans.variable} ${geistMono.variable} h-full whitespace-pre-line antialiased`}
 		>
-			<body className='flex min-h-full flex-col'>{children}</body>
+			<body className='bg-background text-foreground flex min-h-full flex-col'>
+				<ThemeProvider
+					attribute='class'
+					defaultTheme='system'
+					enableSystem
+					disableTransitionOnChange
+				>
+					{children}
+				</ThemeProvider>
+			</body>
 		</html>
 	)
+}
+
+export const viewport = {
+	initialScale: 1,
+	maximumScale: 1,
+	themeColor: [
+		{ color: '#f7f7f7', media: '(prefers-color-scheme: light)' },
+		{ color: '#14120b', media: '(prefers-color-scheme: dark)' }
+	],
+	userScalable: false,
+	width: 'device-width'
 }
