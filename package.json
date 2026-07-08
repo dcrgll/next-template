@@ -11,6 +11,10 @@
 		"lint:check": "ultracite check",
 		"lint": "ultracite fix",
 		"typecheck": "tsc --noEmit",
+		"deps:check": "taze",
+		"deps:update": "taze --write --install",
+		"deps:update:minor": "taze minor --write --install",
+		"deps:update:major": "taze major --write --install",
 		"commit": "cz",
 		"commitlint": "commitlint --edit",
 		"prepare": "lefthook install"
@@ -38,6 +42,7 @@
 		"oxlint-plugin-react-doctor": "^0.7.1",
 		"portless": "^0.15.1",
 		"tailwindcss": "^4",
+		"taze": "^19.14.1",
 		"typescript": "^5",
 		"ultracite": "^7.9.2"
 	},
