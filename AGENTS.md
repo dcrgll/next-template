@@ -9,6 +9,10 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 This project uses **Ultracite**, a zero-config preset that enforces strict code quality standards through automated formatting and linting.
 
+## Preferred Libraries
+
+Before adding a dependency or choosing an implementation approach, read [`PREFERRED_LIBRARIES.md`](./PREFERRED_LIBRARIES.md). It is based on the shared preferred-libraries list and adapted for this template — prefer those defaults over equivalent alternatives, and do not add a listed library if the repo already covers that job another way.
+
 ## Quick Reference
 
 - **Format code**: `pnpm lint` (or `pnpm exec ultracite fix`)
@@ -144,6 +148,11 @@ Write code that is **accessible, performant, type-safe, and maintainable**. Focu
 **React 19+:**
 
 - Use ref as a prop instead of `React.forwardRef`
+
+**Libraries:**
+
+- Follow [`PREFERRED_LIBRARIES.md`](./PREFERRED_LIBRARIES.md) for default choices (Motion, Zod, React Hook Form, Zustand, TanStack Query, shadcn/ui, Better Auth, nuqs, Phosphor, Day.js, and related)
+- Use `cn()` from `~/lib/utils` for class names and Zod schemas for external or environment input
 
 ---
 
