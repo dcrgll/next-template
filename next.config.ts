@@ -2,7 +2,7 @@ import { withEnvStyles } from 'env.style'
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-	allowedDevOrigins: ['new.cargill.app', '*.new.cargill.app'],
+	allowedDevOrigins: ['dan.local', '*.dan.local'],
 	compiler: {
 		removeConsole: true
 	},

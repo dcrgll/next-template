@@ -65,7 +65,7 @@ cp .env.example .env.local
 pnpm dev
 ```
 
-Open [https://new.cargill.app](https://new.cargill.app) in your browser. To use the standard Next.js development server instead, run `pnpm dev:app`.
+Open [https://dan.local](https://dan.local) in your browser. To use the standard Next.js development server instead, run `pnpm dev:app`.
 
 ## Project structure
 
@@ -88,18 +88,18 @@ Open [https://new.cargill.app](https://new.cargill.app) in your browser. To use 
 
 ## Scripts
 
-| Command            | Description                                          |
-| ------------------ | ---------------------------------------------------- |
-| `pnpm dev`         | Start Next.js through Portless at `new.cargill.app`. |
-| `pnpm dev:app`     | Start the standard Next.js development server.       |
-| `pnpm build`       | Create a production build.                           |
-| `pnpm start`       | Run the production server.                           |
-| `pnpm lint:check`  | Check formatting and lint rules.                     |
-| `pnpm lint`        | Apply automatic formatting and lint fixes.           |
-| `pnpm typecheck`   | Type-check without emitting files.                   |
-| `pnpm deps:check`  | Report available dependency updates.                 |
-| `pnpm deps:update` | Update dependencies and install them.                |
-| `pnpm commit`      | Create a conventional commit interactively.          |
+| Command            | Description                                    |
+| ------------------ | ---------------------------------------------- |
+| `pnpm dev`         | Start Next.js through Portless at `dan.local`. |
+| `pnpm dev:app`     | Start the standard Next.js development server. |
+| `pnpm build`       | Create a production build.                     |
+| `pnpm start`       | Run the production server.                     |
+| `pnpm lint:check`  | Check formatting and lint rules.               |
+| `pnpm lint`        | Apply automatic formatting and lint fixes.     |
+| `pnpm typecheck`   | Type-check without emitting files.             |
+| `pnpm deps:check`  | Report available dependency updates.           |
+| `pnpm deps:update` | Update dependencies and install them.          |
+| `pnpm commit`      | Create a conventional commit interactively.    |
 
 ## Quality checks
 
@@ -108,7 +108,7 @@ Run the same checks enforced by CI before opening a pull request:
 ```bash
 pnpm lint:check
 pnpm typecheck
-NEXT_PUBLIC_SITE_URL=https://new.cargill.app pnpm build
+NEXT_PUBLIC_SITE_URL=https://dan.local pnpm build
 ```
 
 ## Deployment

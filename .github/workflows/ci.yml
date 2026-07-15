@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       LEFTHOOK: '0'
-      NEXT_PUBLIC_SITE_URL: https://new.cargill.app
+      NEXT_PUBLIC_SITE_URL: https://dan.local
     steps:
       - uses: actions/checkout@v7
       - uses: pnpm/action-setup@v6
