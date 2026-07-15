@@ -7,6 +7,7 @@ A modern, type-safe Next.js starter for building web applications with sensible 
   <a href="#getting-started"><strong>Getting started</strong></a> ·
   <a href="#project-structure"><strong>Project structure</strong></a> ·
   <a href="#scripts"><strong>Scripts</strong></a> ·
+  <a href="#preferred-libraries"><strong>Preferred libraries</strong></a> ·
   <a href="#deployment"><strong>Deployment</strong></a> ·
   <a href="#contributing"><strong>Contributing</strong></a>
 </p>
@@ -81,10 +82,17 @@ Open [https://dan.local](https://dan.local) in your browser. To use the standard
 │   ├── styles            # Global styles and theme tokens
 │   └── env.ts            # Validated environment contract
 ├── AGENTS.md             # Agent and project conventions
+├── PREFERRED_LIBRARIES.md # Preferred stack and dependency guidance
 ├── components.json       # shadcn/ui configuration
 ├── lefthook.yml          # Local Git hook configuration
 └── package.json          # Scripts and dependencies
 ```
+
+## Preferred libraries
+
+When adding UI, validation, theming, or tooling, follow [`PREFERRED_LIBRARIES.md`](./PREFERRED_LIBRARIES.md). It documents the default choices for this template (shadcn/ui + Base UI, Phosphor, Tailwind CSS 4, Zod, `next-themes`, Ultracite) and the alternatives to avoid.
+
+Agent-oriented project conventions live in [`AGENTS.md`](./AGENTS.md), which also points at the preferred libraries list.
 
 ## Scripts
 
@@ -130,6 +138,7 @@ The `/api/health` route returns an uncached `200` response with `{ "status": "ok
 ## Contributing
 
 1. Create a branch using a conventional prefix such as `feat/`, `fix/`, or `chore/`.
-2. Make a focused change and run the quality checks.
-3. Commit with `pnpm commit` or a conventional commit message.
-4. Push the branch and open a pull request against `main`.
+2. Prefer libraries and patterns from [`PREFERRED_LIBRARIES.md`](./PREFERRED_LIBRARIES.md).
+3. Make a focused change and run the quality checks.
+4. Commit with `pnpm commit` or a conventional commit message.
+5. Push the branch and open a pull request against `main`.
