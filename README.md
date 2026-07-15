@@ -90,7 +90,7 @@ Open [https://dan.local](https://dan.local) in your browser. To use the standard
 
 ## Preferred libraries
 
-When adding UI, validation, theming, or tooling, follow [`PREFERRED_LIBRARIES.md`](./PREFERRED_LIBRARIES.md). It documents the default choices for this template (shadcn/ui + Base UI, Phosphor, Tailwind CSS 4, Zod, `next-themes`, Ultracite) and the alternatives to avoid.
+When adding UI, forms, state, data fetching, auth, or related features, follow [`PREFERRED_LIBRARIES.md`](./PREFERRED_LIBRARIES.md). It mirrors the shared preferred-libraries guidance and notes where this template already ships a choice (for example Tailwind, shadcn/ui + Base UI, Phosphor, Zod, and `next-themes`).
 
 Agent-oriented project conventions live in [`AGENTS.md`](./AGENTS.md), which also points at the preferred libraries list.
 
