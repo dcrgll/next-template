@@ -1,4 +1,44 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:best-practices"]
+	"extends": ["config:best-practices", "group:allNonMajor"],
+	"prConcurrentLimit": 3,
+	"packageRules": [
+		{
+			"groupName": "Next.js and React",
+			"groupSlug": "nextjs-react",
+			"matchPackageNames": [
+				"next",
+				"react",
+				"react-dom",
+				"@types/react",
+				"@types/react-dom"
+			]
+		},
+		{
+			"groupName": "Tailwind CSS",
+			"groupSlug": "tailwindcss",
+			"matchPackageNames": [
+				"tailwindcss",
+				"@tailwindcss/postcss",
+				"tw-animate-css"
+			]
+		},
+		{
+			"groupName": "code quality tooling",
+			"groupSlug": "code-quality",
+			"matchPackageNames": [
+				"ultracite",
+				"oxfmt",
+				"oxlint",
+				"typescript",
+				"@types/node",
+				"babel-plugin-react-compiler"
+			]
+		},
+		{
+			"groupName": "GitHub Actions",
+			"groupSlug": "github-actions",
+			"matchManagers": ["github-actions"]
+		}
+	]
 }
