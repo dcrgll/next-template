@@ -85,8 +85,8 @@ importers:
         specifier: 1.73.0
         version: 1.73.0
       portless:
-        specifier: 0.15.1
-        version: 0.15.1
+        specifier: 0.15.3
+        version: 0.15.3
       tailwindcss:
         specifier: 4.3.2
         version: 4.3.2
@@ -2768,8 +2768,8 @@ packages:
   pnpm-workspace-yaml@1.6.1:
     resolution: {integrity: sha512-yTeZntGWi8m9WNuhoVsP0DpFc4sC1U0+rr/qR6Zi9n2g3sxXY+JfccjXjjruNz96tM8I09yaJUA86doRnNLkbg==}
 
-  portless@0.15.1:
-    resolution: {integrity: sha512-MQTt405HrcIa3m9OSKpH6WjJDbfNP4oFMNg0VzAoUO4B19l1eFJBFcSWfQY8KYMhzZVfa+Gea2OUrlDm8+/M4A==}
+  portless@0.15.3:
+    resolution: {integrity: sha512-2xm7SOHMhl6QOZZS3hwdtVT7D/908TDH8+Sebc1TJRJcaTVtTwMR4Mv/oI5JsdeiMh/6Im+Tp4e/OsPn+skOJQ==}
     engines: {node: '>=24'}
     os: [darwin, linux, win32]
     hasBin: true
@@ -5698,7 +5698,7 @@ snapshots:
     dependencies:
       yaml: 2.9.0
 
-  portless@0.15.1: {}
+  portless@0.15.3: {}
 
   postcss-selector-parser@7.1.4:
     dependencies:
