@@ -51,7 +51,7 @@
 		"portless": "0.15.1",
 		"tailwindcss": "4.3.2",
 		"taze": "19.14.1",
-		"typescript": "6.0.3",
+		"typescript": "7.0.2",
 		"ultracite": "7.9.3"
 	},
 	"config": {
