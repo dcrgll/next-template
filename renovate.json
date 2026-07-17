@@ -4,6 +4,11 @@
 	"prConcurrentLimit": 3,
 	"packageRules": [
 		{
+			"description": "TypeScript 7 is Go-native and drops the JS Compiler API that Next.js still requires for typechecking. Re-enable once Next.js stable supports it (experimental useTypeScriptCli on canary).",
+			"matchPackageNames": ["typescript"],
+			"allowedVersions": "<7"
+		},
+		{
 			"groupName": "Next.js and React",
 			"groupSlug": "nextjs-react",
 			"matchPackageNames": [
