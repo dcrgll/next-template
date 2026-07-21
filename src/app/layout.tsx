@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 		canonical: '/'
 	},
 	description: siteDescription,
-	metadataBase: env.siteUrl,
+	metadataBase: env.NEXT_PUBLIC_SITE_URL,
 	openGraph: {
 		description: siteDescription,
 		siteName,
