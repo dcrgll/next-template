@@ -1,3 +1,4 @@
+import './src/env'
 import { withEnvStyles } from 'env.style'
 import type { NextConfig } from 'next'
 
