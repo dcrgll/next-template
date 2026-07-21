@@ -81,8 +81,9 @@ Open [https://dan.local](https://dan.local) in your browser. To use the standard
 │   ├── lib               # Application utilities
 │   ├── styles            # Global styles and theme tokens
 │   └── env.ts            # Validated environment contract
+├── docs
+│   └── PREFERRED_LIBRARIES.md # Preferred stack and dependency guidance
 ├── AGENTS.md             # Agent and project conventions
-├── PREFERRED_LIBRARIES.md # Preferred stack and dependency guidance
 ├── components.json       # shadcn/ui configuration
 ├── lefthook.yml          # Local Git hook configuration
 └── package.json          # Scripts and dependencies
@@ -90,7 +91,7 @@ Open [https://dan.local](https://dan.local) in your browser. To use the standard
 
 ## Preferred libraries
 
-When adding UI, forms, state, data fetching, auth, or related features, follow [`PREFERRED_LIBRARIES.md`](./PREFERRED_LIBRARIES.md). It mirrors the shared preferred-libraries guidance and notes where this template already ships a choice (for example Tailwind, shadcn/ui + Base UI, Phosphor, Zod, and `next-themes`).
+When adding UI, forms, state, data fetching, auth, or related features, follow [`docs/PREFERRED_LIBRARIES.md`](./docs/PREFERRED_LIBRARIES.md). It mirrors the shared preferred-libraries guidance and notes where this template already ships a choice (for example Tailwind, shadcn/ui + Base UI, Phosphor, Zod, and `next-themes`).
 
 Agent-oriented project conventions live in [`AGENTS.md`](./AGENTS.md), which also points at the preferred libraries list.
 
@@ -138,7 +139,7 @@ The `/api/health` route returns an uncached `200` response with `{ "status": "ok
 ## Contributing
 
 1. Create a branch using a conventional prefix such as `feat/`, `fix/`, or `chore/`.
-2. Prefer libraries and patterns from [`PREFERRED_LIBRARIES.md`](./PREFERRED_LIBRARIES.md).
+2. Prefer libraries and patterns from [`docs/PREFERRED_LIBRARIES.md`](./docs/PREFERRED_LIBRARIES.md).
 3. Make a focused change and run the quality checks.
 4. Commit with `pnpm commit` or a conventional commit message.
 5. Push the branch and open a pull request against `main`.
