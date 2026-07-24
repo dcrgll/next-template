@@ -1,7 +1,14 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:best-practices", "group:allNonMajor"],
+	"extends": [
+		"config:best-practices",
+		"group:allNonMajor",
+		":enableVulnerabilityAlerts"
+	],
 	"prConcurrentLimit": 3,
+	"vulnerabilityAlerts": {
+		"minimumReleaseAge": null
+	},
 	"packageRules": [
 		{
 			"description": "TypeScript 7 is Go-native and drops the JS Compiler API that Next.js still requires for typechecking. Re-enable once Next.js stable supports it (experimental useTypeScriptCli on canary).",
