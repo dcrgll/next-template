@@ -7,6 +7,13 @@ export default defineConfig({
 	extends: [core, react, next],
 	ignorePatterns: [...(core.ignorePatterns ?? []), 'src/components/ui/*'],
 	rules: {
-		'func-style': ['error', 'declaration']
+		'func-style': ['error', 'declaration'],
+		// Keep React components as function declarations to match func-style.
+		'react/function-component-definition': [
+			'error',
+			{
+				namedComponents: 'function-declaration'
+			}
+		]
 	}
 })
