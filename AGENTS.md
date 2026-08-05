@@ -94,12 +94,15 @@ Write code that is **accessible, performant, type-safe, and maintainable**. Focu
 
 ### React & JSX
 
-- Use function components over class components
-- Call hooks at the top level only, never conditionally
+- Use function components over class components — define them with **function declarations**, not arrow functions (`function ProductCard() { … }`, not `const ProductCard = () => …`)
+- Prefer **named exports** for components and hooks (`export function ProductCard` / `export { ProductCard }`). Do **not** default-export components unless Next.js requires it (`page`, `layout`, `loading`, `error`, `global-error`, `not-found`, `template`, metadata image files, and similar App Router entrypoints)
+- Default to Server Components; add `'use client'` only when the file needs browser APIs, state, effects, or client-only event handlers — push client boundaries down
+- Call hooks at the top level only, never conditionally; export shared hooks as named functions from `src/hooks/`
 - Specify all dependencies in hook dependency arrays correctly
 - Use the `key` prop for elements in iterables (prefer unique IDs over array indices)
 - Nest children between opening and closing tags instead of passing as props
 - Don't define components inside other components
+- Pass `ref` as a prop (React 19) — do not use `React.forwardRef`
 - Use semantic HTML and ARIA attributes for accessibility:
   - Provide meaningful alt text for images
   - Use proper heading hierarchy
