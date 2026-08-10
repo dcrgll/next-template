@@ -97,8 +97,8 @@ importers:
         specifier: 4.3.3
         version: 4.3.3
       taze:
-        specifier: 19.17.2
-        version: 19.17.2
+        specifier: 20.0.0
+        version: 20.0.0
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -2947,8 +2947,8 @@ packages:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
     engines: {node: '>=6'}
 
-  taze@19.17.2:
-    resolution: {integrity: sha512-1WH+LUf5H0R07EF606fuP5TuHPVvtrMIPpn69EkqaOVJYg0foL8xnD+lEs0s19Zfmplul5nRd3TpbbF0twXCkw==}
+  taze@20.0.0:
+    resolution: {integrity: sha512-aygXyZ0wQrQGjuclEWE1qSyxnlVERKO51Re+xhHwgS0Ml2dqCIXpMjRrUdV1thJFOUwKJj9XPvv9ZVlAaV0CWg==}
     hasBin: true
 
   thread-stream@4.2.0:
@@ -5765,7 +5765,7 @@ snapshots:
 
   tapable@2.3.3: {}
 
-  taze@19.17.2:
+  taze@20.0.0:
     dependencies:
       '@antfu/ni': 30.3.0
       '@henrygd/queue': 1.2.0
