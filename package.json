@@ -54,7 +54,7 @@
 		"tailwindcss": "4.3.3",
 		"taze": "20.0.0",
 		"typescript": "6.0.3",
-		"ultracite": "7.10.1"
+		"ultracite": "7.10.2"
 	},
 	"config": {
 		"commitizen": {
