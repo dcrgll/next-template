@@ -48,13 +48,13 @@
 		"commitizen": "4.3.2",
 		"cz-conventional-changelog": "3.3.0",
 		"lefthook": "2.1.10",
-		"oxfmt": "0.62.0",
-		"oxlint": "1.77.0",
+		"oxfmt": "0.63.0",
+		"oxlint": "1.78.0",
 		"portless": "0.15.5",
 		"tailwindcss": "4.3.3",
 		"taze": "20.0.1",
 		"typescript": "6.0.3",
-		"ultracite": "7.10.2"
+		"ultracite": "7.10.5"
 	},
 	"config": {
 		"commitizen": {
