@@ -38,8 +38,8 @@
 		"zod": "^4.4.3"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "21.2.3",
-		"@commitlint/config-conventional": "21.2.3",
+		"@commitlint/cli": "21.2.4",
+		"@commitlint/config-conventional": "21.2.4",
 		"@tailwindcss/postcss": "4.3.3",
 		"@types/node": "26.6.4",
 		"@types/react": "19.3.0",
@@ -47,10 +47,10 @@
 		"babel-plugin-react-compiler": "1.0.0",
 		"commitizen": "4.3.2",
 		"cz-conventional-changelog": "3.3.0",
-		"lefthook": "2.1.16",
+		"lefthook": "2.2.2",
 		"oxfmt": "0.71.0",
 		"oxlint": "1.86.0",
-		"portless": "0.15.7",
+		"portless": "0.15.12",
 		"tailwindcss": "4.3.3",
 		"taze": "21.3.0",
 		"typescript": "6.0.3",
